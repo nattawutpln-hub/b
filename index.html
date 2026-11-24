@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Body Scent — ค้นพบกลิ่นที่สะท้อนตัวตนและอารมณ์ของคุณ">
+  <title>Body Scent | Your Scent, Your Mood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="site-nav container" aria-label="เมนูหลัก">
+      <a class="brand" href="index.html">BODY SCENT</a>
+      <div class="nav-links">
+        <a href="index.html" aria-current="page">หน้าแรก</a>
+        <a href="product.html">สินค้าทั้งหมด</a>
+        <a href="#moods">เลือกตามอารมณ์</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" style="min-height: calc(100svh - 84px); display: flex; align-items: center;">
+      <div class="hero-inner container">
+        <div class="hero-copy">
+          <p class="eyebrow">A SCENT THAT FEELS LIKE YOU</p>
+          <h1 class="hero-title">ค้นพบกลิ่นที่<br><span>เป็นตัวคุณ</span></h1>
+          <p class="lead">เพราะทุกอารมณ์มีเรื่องราว และทุกเรื่องราวมีกลิ่นหอมที่ใช่
+            ให้ Body Scent เป็นรายละเอียดเล็ก ๆ ที่เติมเต็มช่วงเวลาของคุณ</p>
+          <a class="button" href="product.html">ดูสินค้าทั้งหมด</a>
+          <p class="overline" style="margin-top: 2.5rem;">YOUR SCENT, YOUR MOOD.</p>
+        </div>
+
+        <div class="hero-art" aria-label="ภาพบรรยากาศผลิตภัณฑ์ Body Scent">
+          <img
+            src="images/hero.jpg"
+            alt="ผลิตภัณฑ์ Body Scent ในบรรยากาศเรียบหรู"
+            onerror="this.style.display='none'; this.parentElement.style.background='linear-gradient(145deg, #e8e0d4, #cfc2b0 55%, #f4f0e8)';"
+          >
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--light" id="moods">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">DISCOVER YOUR MOOD</p>
+          <h2>Choose Your Feeling</h2>
+          <p>เลือกกลิ่นหอมที่เข้ากับความรู้สึกในแบบของคุณ</p>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem;">
+          <a class="mood-card" data-mood="fresh" href="product.html?mood=fresh">
+            <span class="mood-accent" aria-hidden="true">✳</span>
+            <h3>Fresh</h3>
+            <p>สดชื่น เบาสบาย เหมือนได้เริ่มต้นวันใหม่</p>
+            <span class="overline">EXPLORE MOOD →</span>
+          </a>
+
+          <a class="mood-card" data-mood="sweet" href="product.html?mood=sweet">
+            <span class="mood-accent" aria-hidden="true">✿</span>
+            <h3>Sweet</h3>
+            <p>ละมุน อ่อนหวาน เติมความอบอุ่นให้ทุกวัน</p>
+            <span class="overline">EXPLORE MOOD →</span>
+          </a>
+
+          <a class="mood-card" data-mood="confident" href="product.html?mood=confident">
+            <span class="mood-accent" aria-hidden="true">✦</span>
+            <h3>Confident</h3>
+            <p>มีเสน่ห์ มั่นใจ พร้อมเผยตัวตนอย่างชัดเจน</p>
+            <span class="overline">EXPLORE MOOD →</span>
+          </a>
+
+          <a class="mood-card" data-mood="romance" href="product.html?mood=romance">
+            <span class="mood-accent" aria-hidden="true">♡</span>
+            <h3>Romance</h3>
+            <p>นุ่มนวล โรแมนติก สำหรับช่วงเวลาพิเศษ</p>
+            <span class="overline">EXPLORE MOOD →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container section-heading">
+        <p class="eyebrow">THE BODY SCENT EXPERIENCE</p>
+        <h2>Make Every Moment Yours.</h2>
+        <p class="lead" style="margin-inline: auto;">ค้นพบความหอมที่ใช่ แล้วปล่อยให้ทุกวันเป็นช่วงเวลาที่พิเศษในแบบของคุณ</p>
+        <a class="button" href="product.html">เลือกกลิ่นที่ใช่สำหรับคุณ</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <a class="brand" href="index.html">BODY SCENT</a>
+      <p>Your Scent, Your Mood.</p>
+      <small>© 2026 Body Scent. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <style>
+    @media (max-width: 900px) {
+      #moods .container > div[style*="grid-template-columns"] {
+        grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+      }
+    }
+    @media (max-width: 520px) {
+      #moods .container > div[style*="grid-template-columns"] {
+        grid-template-columns: 1fr !important;
+      }
+    }
+  </style>
+</body>
+</html>
